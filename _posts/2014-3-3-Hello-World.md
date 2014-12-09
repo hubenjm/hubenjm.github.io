@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Hello World!
-author: Mark Hubenhtal
-category: Miscellaneous
 ---
 
 This is a test.
