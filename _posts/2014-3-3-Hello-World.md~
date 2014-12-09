@@ -3,7 +3,6 @@ layout: post
 title: Hello World!
 author: Mark Hubenhtal
 category: Miscellaneous
-use_math: true
 ---
 
 This is a test.
