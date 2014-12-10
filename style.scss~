@@ -18,9 +18,11 @@ html {
 }
 
 body {
-	background: $white;
+	background: $black;
+	/* $white */
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $white;
+  /* $darkGray */
 }
 
 .container {
@@ -160,8 +162,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin-right: 15px;
 
   @include mobile {

@@ -4,21 +4,22 @@
 /***********************/
 
 .highlight { 
-  background-color: $darkerGray;
+  background-color: $black;
   padding: 5px 10px;
   margin: 20px 0;
 }
 
 .highlight pre {
   /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
-  word-break: break-all;
-  word-wrap: break-word;
+  /* word-break: break-all;
+  word-wrap: break-word;*/
 }
  
 code {
   font-family: 'Courier', monospace;
-  font-size: 14px;
-  color: #999
+  font-size: 15px;
+  color: $blue
+  /* #6479e1	#999 */
 }
  
 // Solarized Light Pygments 
@@ -110,7 +111,7 @@ code {
 /* Name.Other */
 .highlight .nx { color: #555 }
 /* Name.Property */
-.highlight .py { color: #999999 }
+.highlight .py { color: #93A1A1 }
 /* Name.Tag */
 .highlight .nt { color: #268BD2 }
 /* Name.Variable */

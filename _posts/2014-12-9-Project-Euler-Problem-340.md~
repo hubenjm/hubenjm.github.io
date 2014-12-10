@@ -7,7 +7,7 @@ month: 12
 day: 9
 ---
 
-When I first attended the [Houston Python Meetup Group](http://www.meetup.com/python-14/), someone mentioned a site called [Project Euler](https://projecteuler.net/), which includes a large number of math problems. However, they aren't just math problems in the usual sense. Most, can't be solved explicitly and require the use of some kind of programming language to complete. However, the main issue is that you must be clever enough to devise an efficient enough algorithm to use so that your computer can actually finish in a reasonable amount of time. So in short, one must combine a bit of mathematical know-how with a bit of programming.
+When I first attended the [Houston Python Meetup Group](http://www.meetup.com/python-14/), someone mentioned a site called [Project Euler](https://projecteuler.net/), which includes a large number of math problems. However, they aren't just math problems in the usual sense. Most can't be solved explicitly and require the use of some kind of programming language to complete. However, the main issue is that you must be clever enough to devise an efficient enough algorithm to use so that your computer can actually finish in a reasonable amount of time. So in short, one must combine a bit of mathematical know-how with a bit of programming.
 
 I should point out that many of the problems posted involve combinatorics or number theory. And thus it is often necessary to be able to work with infinite precision integers. Fortunately, Python automatically switches to infinite precision integers as needed, which is one reason I decided to use the language in attacking some of these problems.
 
@@ -17,7 +17,7 @@ The point of this post is to analyze [problem 340](https://projecteuler.net/prob
 
 ---
 
-For fixed integers \\(a, b, c\\), define the *crazy function* \\(F(n)\\) as follows:
+For fixed integers \\(a, b, c\\), define the **Crazy Function** \\(F(n)\\) as follows:
 \\(F(n) = \left\\{ \begin{array}{cc} n - c & \textrm{for all }n > b \\\
 F(a + F(a + F(a + F(a + n)))) & \textrm{for all }n \leq b \end{array}\right.\\)
  
@@ -33,12 +33,11 @@ Find the last \\(9\\) digits of \\(S(21^{7}, 7^{21}, 12^{7})\\).
 
 ##Solution##
 
-It's relatively easy to write a simple function in whatever language you want to directly compute \(F(n)\) as defined above. However, due to the quadruple recursion, it would take eternity to find \\(S(21^{7}, 7^{21}, 12^{7})\\), let alone the last \\(9\\) digits.
+It's relatively easy to write a simple function in whatever language you want to directly compute \\(F(n)\\) as defined above. However, due to the quadruple recursion, it would take eternity to find the last \\(9\\) digits of \\(S(21^{7}, 7^{21}, 12^{7})\\), let alone \\(S(21^{7}, 7^{21}, 12^{7})\\) itself.
 
-Fortunately, there is a way to significantly simplify the formula for \\(S(a,b,c)\\) to the point where there is no recursion and the computation is boils down to a single operation. Here is the Python code to compute \\(S(21^{7}, 7^{21}, 12^{1})\\). The function <code>S_red</code>
-is short for a *reduced* version of the function \\(S(a,b,c)\\).
+Fortunately, there is a way to significantly simplify the formula for \\(S(a,b,c)\\) to the point where there is no recursion and the computation is boils down to a single operation. Here is the Python code to compute the last \\(9\\) digits of \\(S(21^{7}, 7^{21}, 12^{1})\\). The function <code>S_red</code> is short for a **reduced** version of the function \\(S(a,b,c)\\).
 
-{% highlight python %}
+{% highlight python linenos %}
 def S_red(q,a,b,c):
 	m = b/a
 	a = a%q
@@ -87,7 +86,7 @@ Next, observe that
 & = \frac{(b-ka)(b-ka + 1) - (b - (k+1)a)(b - (k+1)a + 1)}{2}\\\
 & \quad + 4(k+1)a^{2} - (3k + 4)ac\\\
 & = ab - \frac{a(a-1)}{2} + (3k+4)a(a - c)\\\
-& =: P_{k}  
+& =: P_{k}, \quad 0 \leq k \leq m-1.  
 \end{align}
 
 We then compute

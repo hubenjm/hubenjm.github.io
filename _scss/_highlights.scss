@@ -4,7 +4,7 @@
 /***********************/
 
 .highlight { 
-  background-color: $darkerGray;
+  background-color: $black;
   padding: 5px 10px;
   margin: 20px 0;
 }
@@ -17,8 +17,9 @@
  
 code {
   font-family: 'Courier', monospace;
-  font-size: 14px;
-  color: #999
+  font-size: 15px;
+  color: $blue
+  /* #6479e1	#999 */
 }
  
 // Solarized Light Pygments 
