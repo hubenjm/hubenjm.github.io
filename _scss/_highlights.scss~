@@ -110,7 +110,7 @@ code {
 /* Name.Other */
 .highlight .nx { color: #555 }
 /* Name.Property */
-.highlight .py { color: #93A1A1 }
+.highlight .py { color: #999999 }
 /* Name.Tag */
 .highlight .nt { color: #268BD2 }
 /* Name.Variable */

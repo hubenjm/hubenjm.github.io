@@ -1,12 +1,18 @@
 ---
 layout: post
-title: Hello World!
+title: First Post
 ---
 
-This is a test.
+Hello everyone!
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+This is the very first post of my new site, which I decided to start for a number of reasons. But first, let me just say a bit about myself. I received my PhD in Mathematics from the University of Washington in 2012, under the advisement of [Gunther Uhlmann](http://www.math.washington.edu/~gunther). 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Eventually, I plan to add a lot to this site in addition to the simple blog post format. But for now, I should say I have a strong interest in scientific computing, programming, and mathematical problems with interesting physical applications, such as medical/seismic imaging.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+My goal for this blog is to simply post about what interests me so that what I'm currently thinking about or interested in is available at one easily accessible location. I just started using [github] and [bitbucket] in the past year, so bear with me. This is my first website which uses Jekyll combined with markdown (.md) files in order to generate content. I'm quite happy with the results so far as well as the ability to host everything on github.
+
+One cool feature of Jekyll is the ability to generate nicely formatted webpages from simple .md files. I can even display mathematical expressions such as the following:
+
+\begin{equation}
+\sum_{n=1}^{\infty} \frac{1}{n^{2}} + \sin(3n)
+\end{equation}
