@@ -35,8 +35,7 @@ Find the last \\(9\\) digits of \\(S(21^{7}, 7^{21}, 12^{7})\\).
 
 It's relatively easy to write a simple function in whatever language you want to directly compute \(F(n)\) as defined above. However, due to the quadruple recursion, it would take eternity to find \\(S(21^{7}, 7^{21}, 12^{7})\\), let alone the last \\(9\\) digits.
 
-Fortunately, there is a way to significantly simplify the formula for \\(S(a,b,c)\\) to the point where there is no recursion and the computation is boils down to a single operation. Here is the Python code to compute \\(S(21^{7}, 7^{21}, 12^{1})\\). The function <code>S_red</code>
-is short for a *reduced* version of the function \\(S(a,b,c)\\).
+Fortunately, there is a way to significantly simplify the formula for \\(S(a,b,c)\\) to the point where there is no recursion and the computation is boils down to a single operation. Here is the Python code to compute the last \\(9\\) digits of \\(S(21^{7}, 7^{21}, 12^{1})\\). The function <code>S_red</code> is short for a *reduced* version of the function \\(S(a,b,c)\\).
 
 {% highlight python %}
 def S_red(q,a,b,c):
@@ -72,9 +71,9 @@ F(n) & = F(a + F(a + F(a + F(a + n))))\\\
 \end{align}
 Inductively, one can show that for \\(n \in (b - (k+1)a, b -ka]\\) we have \\[F(n) = n + 4(k+1)a - (3k + 4)c\\].
 
-We now break up the computation of \\(S(a,b,c) = \sum_{n=0}^{b}F(n)\\) into partial sums over subintervals of the form \\( \{ b-(k+1)a + 1, b-(k+1)a + 2, \ldots, b-ka\} \\) where the above formula can be applied.
+We now break up the computation of \\(S(a,b,c) = \sum_{n=0}^{b}F(n)\\) into partial sums over subintervals of the form \\( \\{ b-(k+1)a + 1, b-(k+1)a + 2, \ldots, b-ka\\} \\) where the above formula can be applied.
 
-Let \\[m = \lfloor \frac{b}{a} \rfloor \\] and note that
+Let \\[m = \left\lfloor \frac{b}{a} \right\rfloor \\] and note that
 \begin{align}
 \sum\_{n=0}^{b - ma} F(n) & = \sum\_{n=0}^{b-ma}\left(4(m+1)a - (3m+4)c + n \right)\\\
 & = (b - ma + 1)(4(m+1)a - (3m+4)c) + \frac{(b-ma)(b-ma+1)}{2}

@@ -72,9 +72,9 @@ F(n) & = F(a + F(a + F(a + F(a + n))))\\\
 \end{align}
 Inductively, one can show that for \\(n \in (b - (k+1)a, b -ka]\\) we have \\[F(n) = n + 4(k+1)a - (3k + 4)c\\].
 
-We now break up the computation of \\(S(a,b,c) = \sum_{n=0}^{b}F(n)\\) into partial sums over subintervals of the form \\( \{ b-(k+1)a + 1, b-(k+1)a + 2, \ldots, b-ka\} \\) where the above formula can be applied.
+We now break up the computation of \\(S(a,b,c) = \sum_{n=0}^{b}F(n)\\) into partial sums over subintervals of the form \\( \\{ b-(k+1)a + 1, b-(k+1)a + 2, \ldots, b-ka\\} \\) where the above formula can be applied.
 
-Let \\[m = \lfloor \frac{b}{a} \rfloor \\] and note that
+Let \\[m = \left\lfloor \frac{b}{a} \right\rfloor \\] and note that
 \begin{align}
 \sum\_{n=0}^{b - ma} F(n) & = \sum\_{n=0}^{b-ma}\left(4(m+1)a - (3m+4)c + n \right)\\\
 & = (b - ma + 1)(4(m+1)a - (3m+4)c) + \frac{(b-ma)(b-ma+1)}{2}
@@ -98,3 +98,8 @@ S(a,b,c) & = \sum\_{n=0}^{b - ma}F(n) + \sum\_{k=0}^{m-1}P_{k}\\\
 & = (b - ma + 1)(4(m+1)a - (3m+4)c) + \frac{(b-ma)(b-ma+1)}{2}\\\
 & + \quad m\left(ab - \frac{a(a-1)}{2} \right) + \frac{3m(m-1)}{2}a(a-c) + 4ma(a-c).
 \end{align}
+
+Since we only need the last \\(9\\) digits, we can first compute the remainder modulo \\(10^{9}\\) of each term above and then add them together. The whole process is quite fast.
+
+
+The moral of this story is that we had to de-recursify a function which is quite unwieldly, but still not ridiculous to deal with.
