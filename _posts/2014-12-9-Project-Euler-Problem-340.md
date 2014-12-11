@@ -37,7 +37,7 @@ It's relatively easy to write a simple function in whatever language you want to
 
 Fortunately, there is a way to significantly simplify the formula for \\(S(a,b,c)\\) to the point where there is no recursion and the computation is boils down to a single operation. Here is the Python code to compute the last \\(9\\) digits of \\(S(21^{7}, 7^{21}, 12^{1})\\). The function <code>S_red</code> is short for a **reduced** version of the function \\(S(a,b,c)\\).
 
-{% highlight python linenos %}
+{% highlight python %}
 def S_red(q,a,b,c):
 	m = b/a
 	a = a%q

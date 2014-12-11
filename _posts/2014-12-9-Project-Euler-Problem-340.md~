@@ -69,7 +69,7 @@ F(n) & = F(a + F(a + F(a + F(a + n))))\\\
 & = F(a + 3a + n - 3c) \\\
 & = 4a + n - 4c.
 \end{align}
-Inductively, one can show that for \\(n \in (b - (k+1)a, b -ka]\\) we have \\[F(n) = n + 4(k+1)a - (3k + 4)c\\].
+Inductively, one can show that for \\(n \in (b - (k+1)a, b -ka]\\) we have \\[F(n) = n + 4(k+1)a - (3k + 4)c.\\]
 
 We now break up the computation of \\(S(a,b,c) = \sum_{n=0}^{b}F(n)\\) into partial sums over subintervals of the form \\( \\{ b-(k+1)a + 1, b-(k+1)a + 2, \ldots, b-ka\\} \\) where the above formula can be applied.
 
