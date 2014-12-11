@@ -22,12 +22,12 @@ footer-links:
   facebook: markhubenthal
   flickr: 
   github: hubenjm
-  instagram: 
+  instagram: markhubenthal
   linkedin: mark-hubenthal/18/5a6/664/
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: MarkVI
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/3529533/mark-hubenthal # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: markhubenthal
