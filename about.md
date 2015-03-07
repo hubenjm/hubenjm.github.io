@@ -21,3 +21,7 @@ I'm an applied mathematician currently working as a postdoctoral researcher at t
 ### Contact me
 
 [markhubenthal@gmail.com](mailto:markhubenthal@gmail.com)
+
+### Academic Webpage
+
+[www.math.uh.edu/~hubenjm](http://www.math.uh.edu/~hubenjm) - For more information regarding my current research, teaching, and postdoctoral work at the University of Houston Department of Mathematics.
