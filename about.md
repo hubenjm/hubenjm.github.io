@@ -24,4 +24,4 @@ I'm an applied mathematician currently working as a postdoctoral researcher at t
 
 ### Academic Webpage
 
-[www.ima.umn.edu/~hubenthal](http://www.ima.umn.edu/~hubennthal) - For more information regarding my current research and postdoctoral work at the University of Minnesota IMA.
+[www.ima.umn.edu/~hubenthal](http://www.ima.umn.edu/~hubenthal) - For more information regarding my current research and postdoctoral work at the University of Minnesota IMA.
