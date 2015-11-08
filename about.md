@@ -24,4 +24,4 @@ I'm an applied mathematician currently working as a postdoctoral researcher at t
 
 ### Academic Webpage
 
-[www.math.uh.edu/~hubenjm](http://www.math.uh.edu/~hubenjm) - For more information regarding my current research, teaching, and postdoctoral work at the University of Houston Department of Mathematics.
+[www.ima.umn.edu/~hubenthal](http://www.ima.umn.edu/~hubennthal) - For more information regarding my current research and postdoctoral work at the University of Minnesota IMA.
